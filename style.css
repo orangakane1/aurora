@@ -1,0 +1,530 @@
+h2 {
+  text-decoration: sans-serif;
+}
+.menu-bar {
+  background: rgb(0, 0);
+  text-align: center;
+}
+.menu-bar ul {
+  display: inline-flex;
+  list-style: none;
+  color: #ffffff;
+}
+.menu-bar ul li {
+  width: 180px;
+  margin: px;
+  padding: 5px;
+}
+.menu-bar ul li a {
+  text-decoration: ;
+  color: #ffffff;
+}
+.active,
+.menu-bar ul li:hover {
+  background: #2bab0d;
+  border-radius: ;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  max-width: 300px;
+  margin: 0 auto 50px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4caf50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,
+.form button:active,
+.form button:focus {
+  background: #43a047;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4caf50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before,
+.container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #ef3b3a;
+}
+
+input[type="text"] {
+  height: 23px;
+  padding-left: 5px;
+  border: 1px solid silver;
+  border-radius: 3px;
+}
+
+select {
+  border: 1px solid silver;
+  border-radius: 3px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+.header h1 {
+  font-size: 20px;
+  font-weight: 200;
+  color: #4ca5ff;
+}
+.header button {
+  background-color: #ffffff;
+  border: 1px solid #4ca5ff;
+  color: #4ca5ff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.transferForm {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 50px 30px;
+  background-color: #efefef;
+}
+.transferForm button {
+  background-color: #4ca5ff;
+  border: none;
+  color: #ffffff;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+.input-box label {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.input-box select {
+  background-color: none;
+  width: 300px;
+  padding: 5px;
+  border: 1px solid silver;
+}
+
+.accounts-header {
+  padding: 30px;
+}
+
+.accounts {
+  padding: 20px 30px;
+  border-top: 1px dotted silver;
+  background-color: #fff;
+}
+.accounts ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.accounts ul li {
+  padding: 10px;
+  border-bottom: 1px dotted silver;
+  display: flex;
+  justify-content: space-between;
+  color: #4ca5ff;
+  font-size: 1.5em;
+}
+.accounts ul li strong {
+  color: #4ca5ff;
+  font-size: 16px;
+}
+.slide {
+  transform: translateY(-153px);
+}
+.slide-down {
+  animation: slide-down 0.7s forwards;
+}
+.slide-up {
+  animation: slide-up 0.7s forwards;
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-153px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes slide-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-153px);
+  }
+}
+
+.close-btn {
+  display: block;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  color: #4ca5ff;
+  position: relative;
+  top: 30px;
+  margin: 0 30px 0 auto;
+}
+
+#message {
+  border: 1px solid silver;
+  border-radius: 4px;
+  padding: 10px 30px;
+  font-size: 14px;
+  color: #ffffff;
+  position: relative;
+}
+
+.fade-enter-active {
+  animation: fade-in 1s forwards;
+}
+.fade-leave-active {
+  animation: fade-out 1s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    top: -20px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+@keyframes fade-out {
+  from {
+    opacity: ;
+    top: 0;
+  }
+  to {
+    opacity: 0;
+    top: px;
+  }
+}
+
+.transfer-ani {
+  animation: hilite 3s forwards;
+}
+
+@keyframes hilite {
+  0%,
+  100% {
+    color: orange;
+  }
+  50% {
+    color: green;
+  }
+}
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans");
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  margin: 1rem 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 0.9rem;
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #333;
+  font-size: 1.825rem;
+  margin: 1.3rem 0;
+}
+
+.section-lead {
+  max-width: 600px;
+  margin: 1rem auto 1.5rem;
+}
+
+.service a {
+  color: #5b7abb;
+  display: block;
+}
+
+.service h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #56ceba;
+  font-size: 1.3rem;
+  margin: 1rem 0 0.6rem;
+}
+
+.services-grid {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.service {
+  background: #fff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+  -webkit-box-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  flex-wrap: wrap;
+  border: 2px solid #e7e7e7;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.service:hover {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+}
+
+.service i {
+  font-size: 3.45rem;
+  margin: 1rem 0;
+}
+
+.service1 i,
+.service1 h4,
+.service1 .cta {
+  color: #42b7ca;
+}
+
+.service1:hover {
+  border: 2px solid #42b7ca;
+}
+
+.service2 i,
+.service2 h4,
+.service2 .cta {
+  color: #425fca;
+}
+
+.service2:hover {
+  border: 2px solid #425fca;
+}
+
+.service3 i,
+.service3 h4,
+.service3 .cta {
+  color: #9c42ca;
+}
+
+.service3:hover {
+  border: 2px solid #9c42ca;
+}
+
+.service .cta span {
+  font-size: 0.6rem;
+}
+
+.service > * {
+  flex: 1 1 100%;
+}
+
+.service .cta {
+  align-self: flex-end;
+}
+
+@media all and (max-width: 900px) {
+  .services-grid {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+  }
+}
+body {
+	font-family: 'Lato', sans-serif;
+}
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+	}
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+	}
+
+.custom-input, .btn-custom {
+	border: 0;
+	background: transparent;
+	border-bottom: 4px solid white;
+	border-radius: 0;
+	margin-bottom: 0;
+}
+.custom-input:focus {
+	border-color: white;
+	background: transparent;
+	color: white;
+}
+.btn-custom {
+	color: white;
+	cursor: pointer;
+}
+.display-5 {
+	font-size: 1.5rem;
+}
+#greeting {
+	margin-top: 2rem;
+	font-size: 2rem;
+}
+@media (min-width: 576px) {
+	.background h1 {
+		font-size: 5.5rem;
+	}
+	.display-5 {
+		font-size: 2.5rem;
+	}
+	#greeting {
+		margin-top: 2rem;
+		font-size: 2.5rem;
+	}
+}
+@media (min-width: 992px) {
+	.background h1 {
+		font-size: 6rem;
+	}
+	#greeting {
+		font-size: 3rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	.background h1 {
+		font-size: 7.5rem;
+	}
+	#greeting {
+		font-size: 3.6rem;
+	}
+}

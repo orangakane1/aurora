@@ -1,0 +1,257 @@
+<html>
+<head>
+
+</head>
+<body>
+ 
+  <div class="menu-bar">
+<ul>
+  <li class="active"><a><b>Home</a></b></li>
+  <li class="active"><b><a> My Wallet</b></a></li>
+<li class="active"><b><a>About Us</b></a></li>
+  
+<li class="active"><b><a>FAQ'S</b> </a></li>
+ 
+    <li class="tab active"><a><b>Sign Up</b></a></li>
+<li class="tab active"><b><a>Log In</b></a></li>
+  <li class="tab active"><b><a>QUICK TRANSFER</b></a></li>
+      </ul>
+  
+    </ul>
+    
+    <h2 id="greeting">WELCOME!<h5>To The Bank Of The Free!!!!</h5></h2>
+    <h3>What would you like to enquire about today?</h3>
+        <div class="carousel-caption">
+        
+        <p>AURORA FINANCE offers unlimited services and transactions that makes your banking experience amazing.</>
+      </div>
+    </div>
+    <div class="carousel-item">
+   </div><!-- /.col -->
+   
+  </div><!-- /.row -->
+	 <div class="row justify-content-center">
+	 	<div class="col-sm-12 col-md-10 col-lg-6">
+	 		<form action="https://www.google.com/search" method="get">
+			  <div class="form-group">
+				<div class="input-group">
+				 <input type="text" name="q" class="form-control custom-input">
+				 <span class="input-group-btn">
+					<button class="btn btn-custom" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+				 </span>
+				</div>
+			  </div>
+			 </form>
+	 	</div><!-- /.col -->
+	 </div><!-- /.row -->
+ </div><!-- /.container -->
+<section>
+  <h3></h3>
+  <p class="section-lead"></p>
+  <div class="services-grid">
+    <div class="service service1">
+      <i class="ti-bar-chart"></i>
+      <h4>Wealth Management</h4>
+      <p> Investment management and planning including hedge funds, asset management, estate planning, and tax accounting.</p>
+      <a href="#" class="cta">Read More <span class="ti-angle-right"></a>
+    </div>
+
+    <div class="service service2">
+      <i class="ti-light-bulb"></i>
+      <h4>Financial Planning</h4>
+      <p>Retirement planning, build an emergency fund, manage debt , plan for taxes, create a budget , set realistic financial goals.</p>
+      <a href="#" class="cta">Read More <span class="ti-angle-right"></a></span>
+    </div>
+    <div class="service service3">
+      <i class="ti-money"></i>
+      <h4>Investment Banking</h4>
+      <p>Assistance in large complicated financial transactions, financial advice to corporates and government.</p>
+      <a href="#" class="cta">Read more <span class="ti-angle-right"></span></a>
+    </div>
+  </div>
+</section>
+  <div class="login-page">
+  <div class="form">
+    <form class="register-form">
+      <input type="text" placeholder="name"/>
+      <input type="password" placeholder="password"/>
+      <input type="text" placeholder="email address"/>
+      
+      <p class="message">Already registered? <a href="#">Sign In</a></p>
+    </form>
+  
+    <form class="login-form">
+      <input type="text" placeholder="email"/>
+      <input type="password" placeholder="password"/>
+      <button>login</button>
+      <p class="message">Not registered? <a href="#">SIGN UP!</a></p>
+    </form>
+    </div>     
+  <script>
+    
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{"amount":{"currency_code":"USD","value":1}}]
+          });
+        },
+
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(orderData) {
+            
+            // Full available details
+            console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+            // Show a success message within this page, e.g.
+            const element = document.getElementById('paypal-button-container');
+            element.innerHTML = '';
+            element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+            // Or go to another URL:  actions.redirect('thank_you.html');
+            
+          });
+        },
+
+        onError: function(err) {
+          console.log(err);
+        }
+      }).render('#paypal-button-container');
+    }
+    initPayPalButton();
+  </script
+    </form>
+    
+  </div>
+</div>
+    </div>
+
+<div id="smart-button-container">
+      <div style="text-align: center;">
+        <div id="paypal-button-container"></div>
+      </div>
+    </div>
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+  <script>
+    function initPayPalButton() {
+      paypal.Buttons({
+        style: {
+          shape: 'rect',
+          color: 'silver',
+          layout: 'horizontal',
+          label: 'pay',
+          
+        },
+
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{"amount":{"currency_code":"USD","value":1}}]
+          });
+        },
+
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(orderData) {
+            
+            // Full available details
+            console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+            // Show a success message within this page, e.g.
+            const element = document.getElementById('paypal-button-container');
+            element.innerHTML = '';
+            element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+            // Or go to another URL:  actions.redirect('thank_you.html');
+            
+          });
+        },
+
+        onError: function(err) {
+          console.log(err);
+        }
+      }).render('#paypal-button-container');
+    }
+    initPayPalButton();
+  </script>
+<div id="app">
+<div class="input-box">
+</div>
+<header>
+  <div class="header">
+    <h1></h1>
+    <transition name="fade">
+      
+    </transition>
+    
+  </div>
+</header>
+<section>
+  <a href="#0" class="close-btn" @click="revealClass = 'slide-up'">&#128473;</a>
+  <form class="transferForm">
+    <div class="input-box">
+      <label for="Account-1">From:</label>
+      <select v-model="gBal" @change="autoSelect(gBal)">
+        <option value="0">Select an account</option>
+        <option value="1">Hybrid Account</option>
+        <option value="2">Classic Account</option>
+         <option value="3">Virtual Account</option>
+      </select>
+    </div>
+    <div class="input-box">
+      <label for="Account-2">To:</label>
+      <select v-model="cBal">
+        <option value="0">Select an account</option>
+        <option value="1" id="opt1">Classic Account</option>
+        <option value="2" id="opt2">Hybrid Account</option>
+        <option value="3" id="opt2">Virtual Account</option>
+      </select>
+    </div>
+    <div class="input-box">
+      <label for="transferAmount"></label>
+      <input type="text" v-model="transferAmount" />
+    </div>
+    <div class="input-box">
+      <button @click.prevent="makeTransfer">Transfer</button>
+    </div>
+  </form>
+</section>
+
+<section :class="revealClass">
+  <div class="accounts">
+    <ul>
+      <li>
+        <p>
+          <strong>Hybrid Account</strong>
+        </p>
+        <p :class="balance1"></p>
+      </li>
+      <li>
+        <p>
+          <strong>Classic Account</strong>
+        </p>
+        <p :class="balance2"></p>
+      </li>
+       <li>
+        <p>
+          <strong>Virtual Account</strong>
+        </p>
+        <p :class="balance2"></p>
+      </li>
+    </ul>
+  </div>
+</section>
+ 
+</div>
+  <center>
+    <footer>
+      <ul>
+       | <a href="#">Privacy</a>
+       | <a href="#">Contact</a>
+      | <a href="#">Terms and Conditions</a>
+        | <a href="#" class="cta">TRAINING AND EDUCATION |
+        
+        <span></a></span>
+        <a><b></a></b>
+      </ul>
+     </footer>
+    </center>
+</body>
+     
+</html> 
